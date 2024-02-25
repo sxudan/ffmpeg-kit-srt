@@ -6,7 +6,7 @@ This is a ffmpeg ios package with srt enabled
 
 Using Podfile
 ```rb
-pod 'ffmpeg-kit-srt'
+pod 'ffmpeg-kit-srt', '1.0.2'
 ```
 
 # Usage 
