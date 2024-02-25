@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ffmpeg-kit-srt"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "FFmpeg Kit iOS Https Shared Framework"
   spec.description  = "Includes FFmpeg with gmp and gnutls libraries enabled."
   spec.author           = { 'sxudan' => 'sudosuwal@gmail.com' }
@@ -17,7 +17,8 @@ Pod::Spec.new do |spec|
     "c++",
     "iconv"
   ]
-
+	
+spec.ios.preserve_paths = 'ffmpegkit.xcframework', 'libavcodec.xcframework', 'libavdevice.xcframework', 'libavfilter.xcframework', 'libavformat.xcframework', 'libavutil.xcframework', 'libswresample.xcframework', 'libswscale.xcframework'
   
   spec.frameworks = [
     "AudioToolbox",
@@ -26,7 +27,17 @@ Pod::Spec.new do |spec|
     "VideoToolbox"
   ]
 
-  spec.vendored_frameworks = 'ffmpegkit.xcframework'
+  spec.vendored_frameworks = [
+
+"ffmpegkit.xcframework",
+    "libavcodec.xcframework",
+    "libavdevice.xcframework",
+    "libavfilter.xcframework",
+    "libavformat.xcframework",
+    "libavutil.xcframework",
+    "libswresample.xcframework",
+    "libswscale.xcframework"
+]
 
   # Add any additional dependencies if needed
 end
