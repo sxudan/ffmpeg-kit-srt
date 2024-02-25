@@ -1,6 +1,6 @@
 # Introduction
 
-This is a ffmpeg with srt enabled
+This is a ffmpeg ios package with srt enabled
 
 # Installation
 
